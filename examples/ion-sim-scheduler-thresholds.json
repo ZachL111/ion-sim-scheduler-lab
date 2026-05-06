@@ -1,0 +1,17 @@
+{
+  "repo": "ion-sim-scheduler-lab",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 2,
+    "ship": 150,
+    "watch": 107
+  },
+  "terms": [
+    "input pressure",
+    "state drift",
+    "review cost",
+    "decision risk"
+  ]
+}
