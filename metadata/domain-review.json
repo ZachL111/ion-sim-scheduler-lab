@@ -1,0 +1,73 @@
+{
+  "repo": "ion-sim-scheduler-lab",
+  "language": "C#",
+  "category": "Simulations",
+  "goal": "Create a C# reference implementation for scheduler workflows, centered on visual model generation, layout fixtures, and stable geometry snapshots.",
+  "review_model": {
+    "terms": [
+      "input pressure",
+      "state drift",
+      "review cost",
+      "decision risk"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "input pressure",
+      "signal": 58,
+      "slack": 26,
+      "drag": 17,
+      "confidence": 63,
+      "score": 154,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "state drift",
+      "signal": 60,
+      "slack": 44,
+      "drag": 20,
+      "confidence": 87,
+      "score": 191,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "review cost",
+      "signal": 63,
+      "slack": 39,
+      "drag": 31,
+      "confidence": 93,
+      "score": 165,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "decision risk",
+      "signal": 61,
+      "slack": 43,
+      "drag": 11,
+      "confidence": 69,
+      "score": 201,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "input pressure",
+      "signal": 74,
+      "slack": 38,
+      "drag": 17,
+      "confidence": 51,
+      "score": 186,
+      "lane": "ship"
+    }
+  ]
+}
